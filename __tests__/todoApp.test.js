@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
-const db = require("./data/db-config");
+const db = require("../data/db-config");
 const request = require("supertest");
-const server = require("./api/server");
+const server = require("../api/server");
 
 afterAll(async () => {
   await db.destroy();
